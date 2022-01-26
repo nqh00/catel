@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/catf7d82/public_html_git/
+    - /bin/cp -R admincp $DEPLOYPATH
+    - /bin/cp -R modules $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
