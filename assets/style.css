@@ -22,10 +22,6 @@ img.img-prod {
   height: 600px;
 }
 
-.control {
-  list-style: none;
-}
-
 .prev {
   left: 20px;
 }
@@ -36,13 +32,12 @@ img.img-prod {
 
 .tns-nav {
   position: absolute;
-  margin-top: -40px;
+  margin-top: -50px;
   margin-left: 50%;
 }
 
 .tns-nav button {
-  height: 15px;
-  width: 8px;
+  height: 1rem;
   background-color: transparent;
   border: 2px solid #fff;
   margin-left: 10px;
@@ -74,23 +69,12 @@ img.img-prod {
 
 #product-control li {
   position: relative;
-  top: -200px;
-  left: -20px;
+  top: -15rem;
   color: rgba(0, 0, 0, 0.2);
 }
 
 #product-control i:hover {
   color: black;
-}
-
-.section-title {
-  display: flex;
-  padding: 20px 0;
-}
-
-.section-title h3 {
-  text-transform: uppercase;
-  margin: 0 15px;
 }
 
 .section-title b {
@@ -100,6 +84,17 @@ img.img-prod {
   opacity: 0.1;
   background-color: currentColor;
 }
+
+/*.section-title {
+  display: flex;
+  padding: 20px 0;
+}
+
+.section-title h3 {
+  text-transform: uppercase;
+  margin: 0 15px;
+}*/
+
 
 /*
 .price span {
