@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const bsli = tns({
+  tns({
     container: '.b-slider',
     items: 1,
     gutter: 20,
@@ -9,30 +9,36 @@ document.addEventListener('DOMContentLoaded', function() {
     mouseDrag: true,
     autoplay: true,
     autoplayButtonOutput: false,
+    preventScrollOnTouch: true,
     controlsContainer: '#banner-control',
   });
-
-  const psli = tns({
-    container: '.p-slider',
-    items: 5,
-    gutter: 20,
-    slideBy: 5,
-    autoWidth: true,
-    controlsPosition: 'bottom',
-    navPosition: 'bottom',
-    mouseDrag: true,
-    controlsContainer: '#topprod-control',
-    responsive: {
-      479: {
-        items: 3,
+  document.querySelectorAll('.p-slider').forEach(slider => {
+    tns({
+      container: slider,
+      items: 5,
+      gutter: 20,
+      slideBy: 5,
+      autoWidth: true,
+      controlsPosition: 'bottom',
+      nav: false,
+      mouseDrag: true,
+      preventScrollOnTouch: true,
+      controlsContainer: slider.nextElementSibling,
+      responsive: {
+        479: {
+          items: 3,
+          slideBy: 3,
+        },
+        767: {
+          gutter: 10,
+          items: 4,
+          slideBy: 4,
+        },
       },
-      767: {
-        gutter: 10,
-        items: 3,
-      },
-      991: {
-        items: 4,
-      },
-    }
+    });
+  });
+  document.querySelectorAll('.price>span').forEach(tag => {
+    const priceTag = Number(tag.innerHTML).toLocaleString('vi');
+    tag.innerHTML = `${priceTag}\u20ab`;
   });
 });
