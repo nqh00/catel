@@ -17,9 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
     items: 5,
     gutter: 20,
     slideBy: 5,
+    autoWidth: true,
     controlsPosition: 'bottom',
     navPosition: 'bottom',
     mouseDrag: true,
     controlsContainer: '#topprod-control',
+    responsive: {
+      479: {
+        items: 3,
+      },
+      767: {
+        gutter: 10,
+        items: 3,
+      },
+      991: {
+        items: 4,
+      },
+    }
   });
 });
