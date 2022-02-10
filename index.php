@@ -12,8 +12,8 @@
 
   <body>
     <header id="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href><img id="logo" src="logo.png" alt="Website logo" class="image"></a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <a class="navbar-brand" href><img id="logo" src="images/logo/logo-small.svg" height="50px" alt="Website logo" class="image"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,12 +34,12 @@
     </header>
     
     <main id="main-site">
-      <section id="banner-area">
-        <div class="b-slider">
+      <section id="banner-area" class="pb-3">
+        <div class="b-slider" style="height: 600px;">
             <img class="img-bann" src="images/banner/banner_01.png" alt="banner">
             <img class="img-bann" src="images/banner/banner_02.jpg" alt="banner">
         </div>
-        <ol class="control list-unstyled" id="banner-control">
+        <ol class="control list-unstyled d-flex justify-content-between mx-3" id="banner-control">
           <li class="prev">
             <i class="fas fa-angle-left fa-2x"></i>
           </li>
@@ -153,70 +153,6 @@
                 </div>
               </div>
             </div>
-            <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (5).png" alt="Sản phẩm bán chạy"></a>
-              <div class="text-center">
-                <h6>Chuột DX 120</h6>
-                <div class="rating text-warning font-size-12">
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                </div>
-                <div class="price py-2">
-                  <span>200000</span>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (6).png" alt="Sản phẩm bán chạy"></a>
-              <div class="text-center">
-                <h6>Chuột DX 120</h6>
-                <div class="rating text-warning font-size-12">
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                </div>
-                <div class="price py-2">
-                  <span>200000</span>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (7).png" alt="Sản phẩm bán chạy"></a>
-              <div class="text-center">
-                <h6>Chuột DX 120</h6>
-                <div class="rating text-warning font-size-12">
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                </div>
-                <div class="price py-2">
-                  <span>200000</span>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (8).png" alt="Sản phẩm bán chạy"></a>
-              <div class="text-center">
-                <h6>Chuột DX 120</h6>
-                <div class="rating text-warning font-size-12">
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                  <span><i class="fas fa-star"></i></span>
-                </div>
-                <div class="price py-2">
-                  <span>200000</span>
-                </div>
-              </div>
-            </div>
           </div>
           <ol class="control d-flex justify-content-between list-unstyled" id="product-control">
             <li class="prev">
@@ -235,6 +171,16 @@
             <b></b>
             <h3 class="font-size-20 text-uppercase mx-3">tất cả sản phẩm</h3>
             <b></b>
+            <div id="filters" class="button-group text-right">
+              <button class="btn is-checked" data-filter="*">tất cả</button>
+              <button class="btn" data-filter=".Calculator">máy tính</button>
+              <button class="btn" data-filter=".Battery">pin</button>
+              <button class="btn" data-filter=".Mouse">chuột</button>
+              <button class="btn" data-filter=".Usb">usb</button>
+            </div>
+            <div class="grid">
+              <div class="grid-item Calculator border"></div>
+            </div>
           </div>
           <div class="p-slider">
             <div class="product">
@@ -400,10 +346,14 @@
           </div>
           <ol class="control d-flex justify-content-between list-unstyled" id="product-control">
             <li class="prev">
-              <i class="fas fa-angle-left fa-2x"></i>
+              <div>
+                <i class="fas fa-angle-left fa-2x"></i>
+              </div>
             </li>
             <li class="next">
-              <i class="fas fa-angle-right fa-2x"></i>
+              <div>
+                <i class="fas fa-angle-right fa-2x"></i>
+              </div>
             </li>
           </ol>
         </div>
@@ -434,11 +384,11 @@
             <hr>
             <ol class="list-unstyled">
               <li class="text-uppercase">công ty tnhh catel - cửa hàng máy tính ngân toàn</li>
-              <li><i class="fas fa-phone"></i> <span class="fw-bold">Tel: </span>0462673838</li>
-              <li><i class="far fa-envelope"></i> <span class="fw-bold">Email: </span>catel@gmail.com</li>
+              <li><i class="fas fa-phone"></i> <span class="fw-bold">Tel: </span><a href="tel:0462673838" class="text-decoration-none">0462673838</a></li>
+              <li><i class="far fa-envelope"></i> <span class="fw-bold">Email: </span><a href="mailto:catel@gmail.com" class="text-decoration-none">catel@gmail.com</a></li>
               <li><i class="far fa-clock"></i> <span class="fw-bold">Thời gian làm việc:</li>
-              <li>Thứ 2 - Thứ 7 / 9:00 AM - 9:00 PM</li>
-              <li>Chủ nhật / 9:00 AM - 7:00 PM</li>
+              <li class="px-3">Thứ 2 - Thứ 7 | 9:00 AM - 9:00 PM</li>
+              <li class="px-5">Chủ nhật | 9:00 AM - 7:00 PM</li>
               <li><i class="fas fa-money-check"></i> <span class="fw-bold">Số TK: </span><span>155217779</span> | Ngân hàng ACB</li>
               <li><i class="fas fa-location-arrow"></i> <span class="fw-bold">Địa chỉ: </span>48 Hàng Vải, Hàng Bồ, Hoàn Kiếm, Hà Nội</li>
             </ol>
@@ -466,6 +416,11 @@
         </div>
       </div>
     </footer>
+
+    <div class="coppyright text-center bg-dark text-white pb-3">
+      <p class="fst-italic">&copy; Copyrights 2022. Design by <a href="#" ><img src="images/logo/catel-small.svg" height="13px" class="px-1" style="cursor: pointer;"></a>.</p>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>

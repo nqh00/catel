@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
           slideBy: 4,
         },
       },
+      lazyload: true,
     });
   });
   document.querySelectorAll('.price>span').forEach(tag => {
