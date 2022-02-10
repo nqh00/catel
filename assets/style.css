@@ -1,10 +1,9 @@
 img {
   background-origin: padding-box;
-  cursor: grab;
 }
 
 img.img-prod {
-  width: 300px;
+  width: 250px;
 }
 
 .tns-nav {
@@ -60,3 +59,8 @@ img.img-prod {
   opacity: 0.1;
   background-color: currentColor;
 }
+
+/*.product {
+  margin-right: 1.2em;
+  margin-top: 1em;
+}*/

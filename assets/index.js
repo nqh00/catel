@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     preventScrollOnTouch: true,
     controlsContainer: '#banner-control',
   });
+
   document.querySelectorAll('.p-slider').forEach(slider => {
     tns({
       container: slider,
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       lazyload: true,
     });
   });
+
   document.querySelectorAll('.price>span').forEach(tag => {
     const priceTag = Number(tag.innerHTML).toLocaleString('vi');
     tag.innerHTML = `${priceTag}\u20ab`;

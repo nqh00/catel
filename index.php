@@ -35,7 +35,7 @@
     
     <main id="gioi-thieu">
       <section id="banner-area">
-        <div class="b-slider" style="height: 600px;">
+        <div class="b-slider" style="height: 600px; cursor: grab;">
             <img class="img-bann" src="images/banner/banner_01.png" alt="banner">
             <img class="img-bann" src="images/banner/banner_02.jpg" alt="banner">
         </div>
@@ -58,7 +58,7 @@
           </div>
           <div class="p-slider">
             <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Rapoo có dây N100.png" alt="Sản phẩm bán chạy"></a>
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Rapoo có dây N100.png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột Rapoo</h6>
                 <div class="rating text-warning font-size-12">
@@ -74,7 +74,7 @@
               </div>
             </div>
             <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (1).png" alt="Sản phẩm bán chạy"></a>
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (1).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Green</h6>
                 <div class="rating text-warning font-size-12">
@@ -90,7 +90,7 @@
               </div> 
             </div>
             <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (2).png" alt="Sản phẩm bán chạy"></a>
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (2).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Red</h6>
                 <div class="rating text-warning font-size-12">
@@ -106,7 +106,7 @@
               </div> 
             </div>
             <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (3).png" alt="Sản phẩm bán chạy"></a>
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (3).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Black</h6>
                 <div class="rating text-warning font-size-12">
@@ -122,7 +122,7 @@
               </div>
             </div>
             <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (3).png" alt="Sản phẩm bán chạy"></a>
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (3).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 110</h6>
                 <div class="rating text-warning font-size-12">
@@ -138,7 +138,7 @@
               </div>
             </div>
             <div class="product">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (4).png" alt="Sản phẩm bán chạy"></a>
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (4).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
                 <div class="rating text-warning font-size-12">
@@ -166,7 +166,7 @@
       </section>
 
       <section id="tat-ca-san-pham">
-        <div class="container">
+        <div class="container pb-5">
           <div class="section-title d-flex align-items-center">
             <b></b>
             <h3 class="font-size-20 text-uppercase mx-3">tất cả sản phẩm</h3>
@@ -182,9 +182,9 @@
               </div>
             </div>
           </div>
-          <div class="grid all-products">
-            <div class="product mouse" data-category="mouse">
-              <a><img class="img-prod" src="images/mouse/Chuột Rapoo có dây N100.png" alt="Sản phẩm bán chạy"></a>
+          <div class="grid all-products ms-4">
+            <div class="product mouse border border-3 rounded-3 m-1" data-category="mouse">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Rapoo có dây N100.png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột Rapoo</h6>
                 <div class="rating text-warning font-size-12">
@@ -199,8 +199,8 @@
                 </div>
               </div>
             </div>
-            <div class="product battery" data-category="battery">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (1).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product battery border border-3 rounded-3 m-1" data-category="battery">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (1).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Green</h6>
                 <div class="rating text-warning font-size-12">
@@ -215,8 +215,8 @@
                 </div>
               </div> 
             </div>
-            <div class="product calculator" data-category="calculator">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (2).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product calculator border border-3 rounded-3 m-1" data-category="calculator">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (2).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Red</h6>
                 <div class="rating text-warning font-size-12">
@@ -231,8 +231,8 @@
                 </div>
               </div> 
             </div>
-            <div class="product mouse" data-category="mouse">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (3).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product mouse border border-3 rounded-3 m-1" data-category="mouse">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (3).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Black</h6>
                 <div class="rating text-warning font-size-12">
@@ -247,8 +247,8 @@
                 </div>
               </div>
             </div>
-            <div class="product calculator" data-category="calculator">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (3).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product calculator border border-3 rounded-3 m-1" data-category="calculator">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (3).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 110</h6>
                 <div class="rating text-warning font-size-12">
@@ -263,8 +263,8 @@
                 </div>
               </div>
             </div>
-            <div class="product battery" data-category="battery">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (4).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product battery border border-3 rounded-3 m-1" data-category="battery">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (4).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
                 <div class="rating text-warning font-size-12">
@@ -279,8 +279,8 @@
                 </div>
               </div>
             </div>
-            <div class="product battery" data-category="battery">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (5).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product battery border border-3 rounded-3 m-1" data-category="battery">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (5).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
                 <div class="rating text-warning font-size-12">
@@ -295,8 +295,8 @@
                 </div>
               </div>
             </div>
-            <div class="product usb" data-category="usb">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (6).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product usb border border-3 rounded-3 m-1" data-category="usb">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (6).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
                 <div class="rating text-warning font-size-12">
@@ -311,8 +311,8 @@
                 </div>
               </div>
             </div>
-            <div class="product usb" data-category="usb">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (7).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product usb border border-3 rounded-3 m-1" data-category="usb">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (7).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
                 <div class="rating text-warning font-size-12">
@@ -327,8 +327,8 @@
                 </div>
               </div>
             </div>
-            <div class="product mouse" data-category="mouse">
-              <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (8).png" alt="Sản phẩm bán chạy"></a>
+            <div class="product mouse border border-3 rounded-3 m-1" data-category="mouse">
+              <a href="#"><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (8).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
                 <div class="rating text-warning font-size-12">
