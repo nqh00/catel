@@ -4,6 +4,12 @@ img {
 
 img.img-prod {
   width: 250px;
+  padding: 10px;
+  transition: transform 1s;
+}
+
+img.img-prod:hover {
+  transform: scale(1.05);
 }
 
 .tns-nav {
@@ -59,8 +65,3 @@ img.img-prod {
   opacity: 0.1;
   background-color: currentColor;
 }
-
-/*.product {
-  margin-right: 1.2em;
-  margin-top: 1em;
-}*/
