@@ -33,13 +33,13 @@
       </nav>
     </header>
     
-    <main id="main-site">
-      <section id="banner-area" class="pb-3">
+    <main id="gioi-thieu">
+      <section id="banner-area">
         <div class="b-slider" style="height: 600px;">
             <img class="img-bann" src="images/banner/banner_01.png" alt="banner">
             <img class="img-bann" src="images/banner/banner_02.jpg" alt="banner">
         </div>
-        <ol class="control list-unstyled d-flex justify-content-between mx-3" id="banner-control">
+        <ol class="control list-unstyled d-flex justify-content-between mb-0 mx-3" id="banner-control">
           <li class="prev">
             <i class="fas fa-angle-left fa-2x"></i>
           </li>
@@ -49,7 +49,7 @@
         </ol>
       </section>
 
-      <section id="top-products">
+      <section id="san-pham-ban-chay">
         <div class="container">
           <div class="section-title d-flex align-items-center">
             <b></b>
@@ -154,36 +154,36 @@
               </div>
             </div>
           </div>
-          <ol class="control d-flex justify-content-between list-unstyled" id="product-control">
+          <ol class="control d-flex justify-content-between list-unstyled px-3" id="product-control">
             <li class="prev">
-              <i class="fas fa-angle-left fa-2x"></i>
+              <div><i class="fas fa-angle-left fa-2x"></i></div>
             </li>
             <li class="next">
-              <i class="fas fa-angle-right fa-2x"></i>
+              <div><i class="fas fa-angle-right fa-2x"></i></div>
             </li>
           </ol>
         </div>
       </section>
 
-      <section id="all-products">
+      <section id="tat-ca-san-pham">
         <div class="container">
           <div class="section-title d-flex align-items-center">
             <b></b>
             <h3 class="font-size-20 text-uppercase mx-3">tất cả sản phẩm</h3>
             <b></b>
-            <div id="filters" class="button-group text-right">
-              <button class="btn is-checked" data-filter="*">tất cả</button>
-              <button class="btn" data-filter=".Calculator">máy tính</button>
-              <button class="btn" data-filter=".Battery">pin</button>
-              <button class="btn" data-filter=".Mouse">chuột</button>
-              <button class="btn" data-filter=".Usb">usb</button>
-            </div>
-            <div class="grid">
-              <div class="grid-item Calculator border"></div>
+            <div class="dropdown px-3">
+              <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Chọn sản phẩm</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button" data-filter="*">Tất cả</button>
+                <button class="dropdown-item" type="button" data-filter=".calculator">Máy tính</button>
+                <button class="dropdown-item" type="button" data-filter=".battery">Pin</button>
+                <button class="dropdown-item" type="button" data-filter=".mouse">Chuột</button>
+                <button class="dropdown-item" type="button" data-filter=".usb">USB</button>
+              </div>
             </div>
           </div>
-          <div class="p-slider">
-            <div class="product">
+          <div class="grid all-products">
+            <div class="product mouse" data-category="mouse">
               <a><img class="img-prod" src="images/mouse/Chuột Rapoo có dây N100.png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột Rapoo</h6>
@@ -199,7 +199,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product battery" data-category="battery">
               <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (1).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Green</h6>
@@ -215,7 +215,7 @@
                 </div>
               </div> 
             </div>
-            <div class="product">
+            <div class="product calculator" data-category="calculator">
               <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (2).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Red</h6>
@@ -231,7 +231,7 @@
                 </div>
               </div> 
             </div>
-            <div class="product">
+            <div class="product mouse" data-category="mouse">
               <a><img class="img-prod" src="images/mouse/Chuột Genius NX7000 (3).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột NX7000 Black</h6>
@@ -247,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product calculator" data-category="calculator">
               <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (3).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 110</h6>
@@ -263,7 +263,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product battery" data-category="battery">
               <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (4).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
@@ -279,7 +279,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product battery" data-category="battery">
               <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (5).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
@@ -295,7 +295,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product usb" data-category="usb">
               <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (6).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
@@ -311,7 +311,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product usb" data-category="usb">
               <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (7).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
@@ -327,7 +327,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product mouse" data-category="mouse">
               <a><img class="img-prod" src="images/mouse/Chuột Genius DX100,110,120,130 (8).png" alt="Sản phẩm bán chạy"></a>
               <div class="text-center">
                 <h6>Chuột DX 120</h6>
@@ -344,18 +344,6 @@
               </div>
             </div>
           </div>
-          <ol class="control d-flex justify-content-between list-unstyled" id="product-control">
-            <li class="prev">
-              <div>
-                <i class="fas fa-angle-left fa-2x"></i>
-              </div>
-            </li>
-            <li class="next">
-              <div>
-                <i class="fas fa-angle-right fa-2x"></i>
-              </div>
-            </li>
-          </ol>
         </div>
       </section>
 
@@ -421,9 +409,10 @@
       <p class="fst-italic">&copy; Copyrights 2022. Design by <a href="#" ><img src="images/logo/catel-small.svg" height="13px" class="px-1" style="cursor: pointer;"></a>.</p>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="assets/index.js"></script>
   </body>
 </html>

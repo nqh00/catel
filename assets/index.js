@@ -42,4 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const priceTag = Number(tag.innerHTML).toLocaleString('vi');
     tag.innerHTML = `${priceTag}\u20ab`;
   });
+
+  const iso = new Isotope('.all-products', {
+    itemSelector: '.product',
+  });
+
+  const filterElement = document.querySelector('.dropdown-menu');
+  filterElement.addEventListener('click', function(event) {
+    const filterValue = event.target.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
+  });
 });
